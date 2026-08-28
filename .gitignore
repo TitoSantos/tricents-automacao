@@ -1,0 +1,28 @@
+# Ambientes virtuais
+.venv/
+venv/
+ENV/
+env/
+
+# Resultados e relatórios de execução do Robot Framework
+results/
+log.html
+report.html
+output.xml
+
+# Cache Python
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+
+# Playwright e Navegadores
+.playwright/
+browser/
+
+# IDEs e Sistema Operacional (macOS / Windows)
+.DS_Store
+**/.DS_Store
+.vscode/
+.idea/
+Thumbs.db
