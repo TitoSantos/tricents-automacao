@@ -1,5 +1,5 @@
 *** Settings ***
-Documentation    Ações atômicas de interação com a página/aba 'Enter Product Data'.
+Documentation    Ações de interação com a página/aba 'Enter Product Data'.
 Resource         ../locators/enter_product_data_locators.resource
 Resource         base_page.resource
 

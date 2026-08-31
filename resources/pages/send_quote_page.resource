@@ -1,5 +1,5 @@
 *** Settings ***
-Documentation    Ações atômicas de interação com a página/aba 'Send Quote'.
+Documentation    Ações de interação com a página/aba 'Send Quote'.
 Resource         ../locators/send_quote_locators.resource
 Resource         base_page.resource
 
@@ -25,15 +25,12 @@ Preencher Senha
     Preencher Campo    ${SEND_QUOTE_PASSWORD_INPUT}    ${senha}
 
 Preencher Confirmacao De Senha
-    [Documentation]    Confirma a senha digitada anteriormente.
     [Arguments]    ${confirmacao_senha}
     Preencher Campo    ${SEND_QUOTE_CONFIRM_PASSWORD_INPUT}    ${confirmacao_senha}
 
 Preencher Comentarios
-    [Documentation]    Preenche comentários adicionais opcionais sobre a cotação.
     [Arguments]    ${comentarios}
     Preencher Campo    ${SEND_QUOTE_COMMENTS_TEXTAREA}    ${comentarios}
 
 Clicar No Botao Enviar Cotacao
-    [Documentation]    Clica no botão 'Send' para submeter a cotação.
     Clicar No Elemento    ${SEND_QUOTE_SEND_BUTTON}

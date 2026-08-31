@@ -1,5 +1,5 @@
 *** Settings ***
-Documentation    Ações atômicas de interação com a página/aba 'Enter Vehicle Data'.
+Documentation    Ações de interação com a página/aba 'Enter Vehicle Data'.
 Resource         ../locators/enter_vehicle_data_locators.resource
 Resource         base_page.resource
 
@@ -84,5 +84,4 @@ Preencher Quilometragem Anual
     Preencher Campo    ${VEHICLE_ANNUAL_MILEAGE_INPUT}    ${milhas}
 
 Clicar No Botao Proximo Em Dados Do Veiculo
-    [Documentation]    Clica no botão 'Next' para avançar para a aba 'Enter Insurant Data'.
     Clicar No Elemento    ${VEHICLE_NEXT_BUTTON}

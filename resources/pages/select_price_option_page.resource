@@ -1,5 +1,5 @@
 *** Settings ***
-Documentation    Ações atômicas de interação com a página/aba 'Select Price Option'.
+Documentation    Ações de interação com a página/aba 'Select Price Option'.
 Resource         ../locators/select_price_option_locators.resource
 Resource         ../locators/common_locators.resource
 Resource         base_page.resource
@@ -40,5 +40,4 @@ Obter Valor Do Plano
     RETURN    ${valor}
 
 Clicar No Botao Proximo Em Opcoes De Preco
-    [Documentation]    Clica no botão 'Next' para avançar para a aba 'Send Quote'.
     Clicar No Elemento    ${PRICE_NEXT_BUTTON}
